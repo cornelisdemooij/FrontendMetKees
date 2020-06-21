@@ -1,4 +1,4 @@
-console.log("Hallo Young Colfield!")
+//console.log("Hallo Young Colfield!")
 
 // Strings, concatenation & templates:
 /* const firstName = 'Bob';
@@ -75,7 +75,7 @@ divisionPromise
   .catch(error => console.error(error)); */
 
 // Promises with asynchronicity:
-function doXAfterYSeconds(name,x,y) {
+/* function doXAfterYSeconds(name,x,y) {
   return new Promise(resolve => {
     console.log('Starting ' + name)
     setTimeout(() => {
@@ -103,4 +103,21 @@ async function parallelFlow() {
   console.log(`finalResult = ${finalResult}`);
   return finalResult;
 }
-parallelFlow();
+parallelFlow(); */
+
+// Fetch API:
+const fetchPromise = fetch('https://api.kanye.rest')
+  .then(response => response.json())
+  .catch(error => console.error(`Something went wrong with the response! ${error}`))
+  .then(data => data.quote)
+  .catch(error => console.error(`Something went wrong with the data! ${error}`))
+  .then((quote) => {
+    console.log(quote);
+    return quote.length;
+  })
+  .catch(error => console.error(`Something went wrong with the quote! ${error}`))
+  .then(length => console.log(length))
+  .catch(error => console.error(`Something went wrong with the length! ${error}`))
+  .finally(() => console.log('This always happens.'));
+// Run this command to enable git yolo: git config --global alias.yolo '!git commit -m "$(curl -s api.kanye.rest/?format=text)"'
+
