@@ -4,13 +4,49 @@ console.warn("Waarschuwing! Implementeer geen bugs!")
 console.error("Oh nee, een error! Ik had nog gezegd om geen bugs toe te voegen!") */
 
 // Variabelen:
-let a = 'text';
+/* let a = 'text';
 console.log(a)
 a = 'meer text';
 console.log(a)
 const b = 'text die je niet kan veranderen';
 console.log(b)
-b = 'nieuwe text?'; // <- dit gaat een error opleveren.
+b = 'nieuwe text?'; // <- dit gaat een error opleveren. */
+
+// Types:
+let a;
+console.log(typeof a)
+console.log(typeof(a))
+let b = null;
+console.log(typeof(b))  // null is een object.
+let c = true;
+console.log(`typeof(c) = ${typeof(c)}`)
+let d = false;
+console.log(`typeof(d) = ${typeof(d)}`)
+let e = new Boolean(true);
+console.log(`typeof(e) = ${typeof(e)}`) // Verwarrend: JavaScript heeft object versie van de native types boolean, number en string.
+let f = 1;
+console.log(`typeof(f) = ${typeof(f)}`)
+let g = 1.0;
+console.log(`typeof(g) = ${typeof(g)}`)
+let h = 1n;
+console.log(`typeof(h) = ${typeof(h)}`)
+let i = "Text";
+console.log(`typeof(i) = ${typeof(i)}`)
+let j = {
+  key: "value",
+  'anotherkey': 3.1415
+};
+console.log(`typeof(j) = ${typeof(j)}`)
+let k = ["an", "array", "is", "also", "an", "object"];
+console.log(`typeof(k) = ${typeof(k)}`)
+let l = (a) => console.log(a);
+console.log(`typeof(l) = ${typeof(l)}`)
+let m = function bla(a) { console.log(a) };
+console.log(`typeof(m) = ${typeof(m)}`)
+let n = Symbol("n");
+let nAgain = Symbol("n");
+console.log(n === nAgain)
+console.log(`typeof(n) = ${typeof(n)}`)
 
 // Strings, concatenation & templates:
 /* const firstName = 'Bob';
