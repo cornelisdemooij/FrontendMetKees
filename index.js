@@ -13,7 +13,7 @@ console.log(b)
 b = 'nieuwe text?'; // <- dit gaat een error opleveren. */
 
 // Types:
-let a;
+/* let a;
 console.log(typeof a)
 console.log(typeof(a))
 let b = null;
@@ -46,7 +46,24 @@ console.log(`typeof(m) = ${typeof(m)}`)
 let n = Symbol("n");
 let nAgain = Symbol("n");
 console.log(n === nAgain)
-console.log(`typeof(n) = ${typeof(n)}`)
+console.log(`typeof(n) = ${typeof(n)}`) */
+
+// Type coercion:
+console.log(`true + false = ${true + false}`)
+console.log(`0 + '1' = ${0 + '1'}`)
+console.log(`'0' + 1 = ${'0' + 1}`)
+console.log(`'0' + '1' = ${'0' + '1'}`)
+console.log(`0 - '1' = ${0 - '1'}`)
+console.log(`'0' - 1 = ${'0' - 1}`)
+console.log(`'0' - '1' = ${'0' - '1'}`)
+x = 3;
+console.log(`'5' + x - x = ${'5' + x - x}`)
+console.log(`'5' - x + x = ${'5' - x + x}`)
+console.log(`[] + null + 1 = ${[] + null + 1}`)
+console.log(`[1,2,3] == [1,2,3] = ${[1,2,3] == [1,2,3]}`)
+console.log(`!+[] = ${!+[]}`)
+console.log(`new Date(0) - 0 = ${new Date(0) - 0}`)
+console.log(`new Date(0) + 0 = ${new Date(0) + 0}`)
 
 // Strings, concatenation & templates:
 /* const firstName = 'Bob';
