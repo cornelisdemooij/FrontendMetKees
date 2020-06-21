@@ -40,7 +40,7 @@ interactWithUser(insult)
 */
 
 // Asynchronous behaviour:
-function slowGreeting(name) {
+/* function slowGreeting(name) {
   console.log("Slow greeting started")
   setTimeout(() => {
     console.log(`Hello ${name}`)
@@ -53,5 +53,26 @@ function fastGreeting(name) {
   }, 1)
 }
 slowGreeting("Alice")
-fastGreeting("Bob")
+fastGreeting("Bob") */
+
+// Promises:
+function divide(a,b) {
+  return new Promise(function(resolve, reject) {
+    try {
+      if (b == 0) {
+        throw new Error("Cannot divide by zero!");
+      }
+      const result = a / b;
+      resolve(result);
+    } catch(error) {
+      reject("An error occurred! " + error);
+    }
+  })
+}
+const a = prompt('Please enter the numerator: ');
+const b = prompt('Please enter the divisor: ');
+const divisionPromise = divide(a,b);
+divisionPromise
+  .then(result => console.log(`The result is ${result}`))
+  .catch(error => console.error(error));
 
