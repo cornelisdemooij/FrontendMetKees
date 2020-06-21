@@ -23,4 +23,17 @@ b = mijnNieuweFunctie(a,b);
 console.log(a)
 console.log(b)
 
+// Callbacks:
+function greeting(name) {
+  alert(`Hello ${name}`)
+}
+function insult(name) {
+  alert(`${name}, you smell like boiled cabbage`)
+}
+function interactWithUser(callback) {
+  let name = prompt('Please enter your name: ');
+  callback(name);
+}
+interactWithUser(greeting)
+interactWithUser(insult)
 
