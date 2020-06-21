@@ -1,4 +1,7 @@
-//console.log("Hallo Young Colfield!")
+// Console logging:
+console.log("Hallo Young Colfield!")
+console.warn("Waarschuwing! Implementeer geen bugs!")
+console.error("Oh nee, een error! Ik had nog gezegd om geen bugs toe te voegen!")
 
 // Strings, concatenation & templates:
 /* const firstName = 'Bob';
@@ -106,7 +109,7 @@ async function parallelFlow() {
 parallelFlow(); */
 
 // Fetch API:
-const fetchPromise = fetch('https://api.kanye.rest')
+/* const fetchPromise = fetch('https://api.kanye.rest')
   .then(response => response.json())
   .catch(error => console.error(`Something went wrong with the response! ${error}`))
   .then(data => data.quote)
@@ -118,6 +121,6 @@ const fetchPromise = fetch('https://api.kanye.rest')
   .catch(error => console.error(`Something went wrong with the quote! ${error}`))
   .then(length => console.log(length))
   .catch(error => console.error(`Something went wrong with the length! ${error}`))
-  .finally(() => console.log('This always happens.'));
+  .finally(() => console.log('This always happens.')); */
 // Run this command to enable git yolo: git config --global alias.yolo '!git commit -m "$(curl -s api.kanye.rest/?format=text)"'
 
