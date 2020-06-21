@@ -1,3 +1,4 @@
+/*
 console.log("Hallo Young Colfield!")
 
 // Strings, concatenation & templates:
@@ -36,4 +37,21 @@ function interactWithUser(callback) {
 }
 interactWithUser(greeting)
 interactWithUser(insult)
+*/
+
+// Asynchronous behaviour:
+function slowGreeting(name) {
+  console.log("Slow greeting started")
+  setTimeout(() => {
+    console.log(`Hello ${name}`)
+  }, 5000)
+}
+function fastGreeting(name) {
+  console.log("Fast greeting started")
+  setTimeout(() => {
+    console.log(`Hello ${name}`)
+  }, 1)
+}
+slowGreeting("Alice")
+fastGreeting("Bob")
 
