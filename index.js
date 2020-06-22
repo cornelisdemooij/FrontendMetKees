@@ -48,7 +48,7 @@ let nAgain = Symbol("n");
 console.log(n === nAgain)
 console.log(`typeof(n) = ${typeof(n)}`) */
 
-// Type coercion:
+// Type coercion met yolo:
 console.log(`true + false = ${true + false}`)
 console.log(`0 + '1' = ${0 + '1'}`)
 console.log(`'0' + 1 = ${'0' + 1}`)
