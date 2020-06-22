@@ -1,19 +1,19 @@
 // Console logging:
-/* console.log("Hallo Young Colfield!")
-console.warn("Waarschuwing! Implementeer geen bugs!")
-console.error("Oh nee, een error! Ik had nog gezegd om geen bugs toe te voegen!") */
+// console.log("Hallo Young Colfield!")
+// console.warn("Waarschuwing! Implementeer geen bugs!")
+// console.error("Oh nee, een error! Ik had nog gezegd om geen bugs toe te voegen!")
 
 // Variabelen:
-/* let a = 'text';
+let a = 'text';
 console.log(a)
 a = 'meer text';
 console.log(a)
 const b = 'text die je niet kan veranderen';
 console.log(b)
-b = 'nieuwe text?'; // <- dit gaat een error opleveren. */
+b = 'nieuwe text?'; // <- dit gaat een error opleveren.
 
 // Types:
-/* let a;
+let a;
 console.log(typeof a)
 console.log(typeof(a))
 let b = null;
@@ -46,7 +46,7 @@ console.log(`typeof(m) = ${typeof(m)}`)
 let n = Symbol("n");
 let nAgain = Symbol("n");
 console.log(n === nAgain)
-console.log(`typeof(n) = ${typeof(n)}`) */
+console.log(`typeof(n) = ${typeof(n)}`)
 
 // Type coercion met yolo:
 console.log(`true + false = ${true + false}`)
