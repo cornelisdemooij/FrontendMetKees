@@ -4,13 +4,13 @@ console.warn("Waarschuwing! Implementeer geen bugs!")
 console.error("Oh nee, een error! Ik had nog gezegd om geen bugs toe te voegen!") */
 
 // Variabelen:
-/* let a = 'text';
+let a = 'text';
 console.log(a)
 a = 'meer text';
 console.log(a)
 const b = 'text die je niet kan veranderen';
 console.log(b)
-b = 'nieuwe text?'; // <- dit gaat een error opleveren. */
+b = 'nieuwe text?'; // <- dit gaat een error opleveren.
 
 // Types:
 let a;
