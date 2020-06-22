@@ -13,7 +13,7 @@ console.log(b)
 b = 'nieuwe text?'; // <- dit gaat een error opleveren. */
 
 // Types:
-/* let a;
+let a;
 console.log(typeof a)
 console.log(typeof(a))
 let b = null;
@@ -46,7 +46,7 @@ console.log(`typeof(m) = ${typeof(m)}`)
 let n = Symbol("n");
 let nAgain = Symbol("n");
 console.log(n === nAgain)
-console.log(`typeof(n) = ${typeof(n)}`) */
+console.log(`typeof(n) = ${typeof(n)}`)
 
 // Type coercion met yolo:
 console.log(`true + false = ${true + false}`)
