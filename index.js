@@ -1,7 +1,7 @@
 // Console logging:
-/* console.log("Hallo Young Colfield!")
-console.warn("Waarschuwing! Implementeer geen bugs!")
-console.error("Oh nee, een error! Ik had nog gezegd om geen bugs toe te voegen!") */
+// console.log("Hallo Young Colfield!")
+// console.warn("Waarschuwing! Implementeer geen bugs!")
+// console.error("Oh nee, een error! Ik had nog gezegd om geen bugs toe te voegen!")
 
 // Variabelen:
 let a = 'text';
